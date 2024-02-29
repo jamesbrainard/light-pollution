@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Light Pollution Maps</title>
+    <title>Animated Light Pollution Map</title>
 </head>
 <body>
 
 <div class="container">
-    <h1>Light Pollution Maps</h1>
+    <h1>Animated Light Pollution Map</h1>
     
     <div id="mapContainer" class="map-container">
         <img id="animatedMap" alt="Light Pollution Map">
+        <span id="currentYear" class="year-text"></span>
     </div>
 </div>
 
@@ -21,6 +22,7 @@
     <input type="range" id="speedSlider" min="1" max="10" value="5">
 </div>
 
+<p id="SourceText" class="source-text">source: Li, X., Zhou, Y., Zhao, M. et al. A harmonized global nighttime light dataset 1992–2018. Sci Data 7, 168 (2020). https://doi.org/10.1038/s41597-020-0510-y</p>
 <script src="js/script.js"></script>
 </body>
 </html>
