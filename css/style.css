@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.map-container {
+    border: 1px solid #ccc;
+    max-width: 600px;
+    overflow: hidden;
+}
