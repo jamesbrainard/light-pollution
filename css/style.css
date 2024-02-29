@@ -5,13 +5,25 @@ body {
 }
 
 .container {
-    display: flex;
-    justify-content: space-around;
+    text-align: center;
     padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
 }
 
 .map-container {
     border: 1px solid #ccc;
-    max-width: 600px;
-    overflow: hidden;
+    max-width: 800px;
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+.controls {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.controls label {
+    margin-right: 10px;
 }
