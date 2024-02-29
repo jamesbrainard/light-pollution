@@ -21,6 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
     animateMap();
 
     speedSlider.addEventListener("input", function () {
-        animationSpeed = 2000 / speedSlider.value; // Adjust the speed based on the slider value
+        animationSpeed = 2000 / speedSlider.value;
     });
 });
