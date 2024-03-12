@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function updateMap() {
         const currentYear = years[currentYearIndex];
         animatedMap.src = `png/LightPollution_${currentYear}.png`;
-        currentYearText.textContent = `Year: ${currentYear}`;
+        currentYearText.textContent = `${currentYear}`;
     }
 
     function animateMap() {

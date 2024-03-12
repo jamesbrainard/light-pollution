@@ -15,8 +15,12 @@ h1 {
 
 .map-container {
     border: 1px solid #ffffff;
-    max-width: 800px;
+    width: 100%;
     margin: 0 auto; /* Center the container horizontally */
+}
+
+.map-overlay {
+    position: relative; 
 }
 
 .controls {
@@ -26,10 +30,19 @@ h1 {
 
 .controls label {
     margin-right: 10px;
+}
+
+.year-text {
+    font-size: 36px;
+    display: block;
+    position: absolute;
+    bottom: 10px; 
+    left: 10px; 
+    color: #ffffff; 
+}
 
 .source-text {
     margin-top: 20px;
     font-size: 8px;
     color: #727272c7;
-}
 }
