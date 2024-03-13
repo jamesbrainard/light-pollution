@@ -16,7 +16,7 @@ h1 {
 .map-container {
     border: 1px solid #ffffff;
     width: 100%;
-    margin: 0 auto; /* Center the container horizontally */
+    margin: 0 auto;
 }
 
 .map-overlay {
@@ -41,8 +41,35 @@ h1 {
     color: #ffffff; 
 }
 
+.title-text {
+    font-size: 24px;
+    display: block;
+    position: absolute;
+    top: 10px; 
+    left: 10px; 
+    color: #ffffff; 
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.subtitle-text {
+    font-size: 14px;
+    display: block;
+    position: absolute;
+    top: 40px; 
+    left: 10px; 
+    color: #ffffff; 
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
 .source-text {
     margin-top: 20px;
     font-size: 8px;
     color: #727272c7;
+}
+
+.map-container:hover .title-text,
+.map-container:hover .subtitle-text {
+    opacity: 1;
 }

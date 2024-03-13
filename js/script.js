@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const mapContainer = document.getElementById("mapContainer");
     const speedSlider = document.getElementById("speedSlider");
     const currentYearText = document.getElementById("currentYear");
+    const mapTitleText = document.getElementById("mapTitle");
+    const mapSubtitleText = document.getElementById("mapSubtitle");
 
     const years = Array.from({ length: 27 }, (_, index) => 1992 + index);
 
@@ -13,6 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
         const currentYear = years[currentYearIndex];
         animatedMap.src = `png/LightPollution_${currentYear}.png`;
         currentYearText.textContent = `${currentYear}`;
+        mapTitleText.textContent = `Light Pollution (1992-2018)`;
+        mapSubtitleText.textContent = `Excessive artificial light harms ecosystems, disrupts sleep, and wastes energy`;
     }
 
     function animateMap() {
